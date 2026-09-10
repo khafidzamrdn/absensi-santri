@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no" />
+<meta name="theme-color" content="#0ea5e9" />
+<title>Absensi Santri</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div id="app">
+  <header class="app-header">
+    <div class="header-left">
+      <div class="header-title">ABSENSI SANTRI</div>
+      <div class="header-sub" id="header-date">—</div>
+    </div>
+    <div class="header-actions">
+      <button class="icon-btn" id="btn-theme" aria-label="Tema">🌙</button>
+      <button class="icon-btn" id="btn-admin" aria-label="Admin">👤</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="view-dashboard" class="view active"></section>
+    <section id="view-santri" class="view"></section>
+    <section id="view-absensi" class="view"></section>
+    <section id="view-riwayat" class="view"></section>
+    <section id="view-rekap" class="view"></section>
+    <section id="view-kalender" class="view"></section>
+    <section id="view-pengaturan" class="view"></section>
+  </main>
+
+  <nav class="bottom-nav">
+    <button data-view="dashboard" class="nav-btn active"><span class="nav-icon">🏠</span><span>Home</span></button>
+    <button data-view="absensi" class="nav-btn"><span class="nav-icon">✅</span><span>Absensi</span></button>
+    <button data-view="santri" class="nav-btn"><span class="nav-icon">👥</span><span>Santri</span></button>
+    <button data-view="rekap" class="nav-btn"><span class="nav-icon">📊</span><span>Rekap</span></button>
+    <button data-view="pengaturan" class="nav-btn"><span class="nav-icon">⚙️</span><span>Lain</span></button>
+  </nav>
+</div>
+
+<div id="modal-root"></div>
+<div id="toast" class="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
